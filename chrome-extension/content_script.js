@@ -11,7 +11,11 @@ window.addEventListener('click', evt => {
 	}
 	if (target) {
 		// check for baseVal of svg a tag's href-SVGAnimatedString
-		const url = target instanceof SVGAElement ? target.href.baseVal : target.href;
+		var url = target instanceof SVGAElement ? target.href.baseVal : target.href;
+		if (url.startsWith("javascript:com.boc.axw.notebook.NotebookContentHelper.openFile('")) {
+			url = url.replace("javascript:com.boc.axw.notebook.NotebookContentHelper.openFile('", "")
+			url = url.replace("')", "")
+		}	
 		if (url.startsWith('file://')) {
 			evt.preventDefault();
 			// 拡張が再読み込みされた場合エラーになるので捕捉

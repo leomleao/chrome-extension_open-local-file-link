@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "ADONIS Local files",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://svado01001/*", "http://svado01001/*"
+      ],
+      "js": [
+        "jquery-3.5.1.min.js",
+        "changeURL.js"
+      ]
+    }
+  ]
+}
