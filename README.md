@@ -12,7 +12,7 @@ This is a fork of the original extension, to specifically enable ADONIS links to
 1. The file opens.
 
 # Chrome Store
-https://chrome.google.com/webstore/detail/nikfmfgobenbhmocjaaboihbeocackld
+https://chrome.google.com/webstore/detail/adonis-local-links/pmbkecepkfjhbdllaohjjocimmlggfcd
 
 # Todo
 - [x] Open by clicking the local file link.
